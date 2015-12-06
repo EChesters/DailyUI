@@ -1,0 +1,31 @@
+/* VARIABLES */
+html, body {
+  background-color: #556270; }
+
+/* LAYOUT --------- */
+.position {
+  display: block; }
+  .position.central {
+    margin: 0 auto; }
+
+.banner {
+  text-align: center; }
+  .banner h1 {
+    color: #C7F464;
+    font-size: 3em; }
+  .banner h2 {
+    color: #eee;
+    font-size: 2.3em;
+    font-style: italic; }
+
+/* TEXT ---------- */
+li {
+  letter-spacing: 5px;
+  font-size: 2em;
+  color: #FF6B6B; }
+  li a {
+    color: #FF6B6B; }
+    li a:hover {
+      color: #4ECDC4; }
+
+/*# sourceMappingURL=styles.css.map */

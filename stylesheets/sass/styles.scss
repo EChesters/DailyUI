@@ -1,0 +1,46 @@
+@import "_partials/_vars.scss";
+
+html, body {
+	background-color: $body-bg;
+}
+
+/* LAYOUT --------- */
+.position {
+	display: block;
+
+	&.central {
+		margin: 0 auto;
+	}
+}
+
+.banner {
+	text-align: center;
+
+	h1 {
+		color: $h1-color;
+		font-size: 3em;
+	}
+
+	h2 {
+		color: $white;
+		font-size: 2.3em;
+		font-style: italic;
+	}
+}
+
+/* TEXT ---------- */
+
+
+li {
+	letter-spacing: 5px;
+	font-size: 2em;
+	color: $link-color;
+
+	a {
+		color: $link-color;
+
+		&:hover {
+			color: $link-hover;
+		}
+	}
+}
