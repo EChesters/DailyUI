@@ -1,6 +1,12 @@
 @import "_partials/_vars.scss";
 
-html, body {
+* {
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+body {
 	background-color: $body-bg;
 }
 
@@ -10,6 +16,16 @@ html, body {
 
 	&.central {
 		margin: 0 auto;
+	}
+
+	&.left {
+		display: inline-block;
+		float: left;
+	}
+
+	&.right {
+		display: inline-block;
+		float: right;
 	}
 }
 
@@ -29,8 +45,6 @@ html, body {
 }
 
 /* TEXT ---------- */
-
-
 li {
 	letter-spacing: 5px;
 	font-size: 2em;
