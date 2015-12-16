@@ -1,0 +1,44 @@
+.btn {
+	@include border-radius(5px);
+	text-align: center;
+	font-size: 1.1em;
+
+
+	&.social-media {
+		display: block;
+		width: 60%;
+		color: $white;
+		text-decoration: none;
+		margin: 15px auto;
+		padding: 10px 20px;
+
+		&.twitter {
+			background-color: $twitter-blue;
+			border: $twitter-border 1px solid;
+		}
+
+		&.facebook {
+			background-color: $facebook-blue;
+			border: $facebook-border 1px solid;
+		}
+	}
+
+	&.signin {
+		@include border-radius(5px);
+		background-color: transparent;
+		text-transform: uppercase;
+		border: 3px solid $white;
+		width: 100%;
+		display: block;
+		color: $white;
+		padding: 10px 20px;
+		font-weight: bold;
+		text-shadow: 0px 0px 24px rgba(0, 0, 0, 0.7);
+
+		&:hover {
+			text-decoration: underline;
+			background-color: #CB623B;
+			border-color: #92492D;
+		}
+	}
+}

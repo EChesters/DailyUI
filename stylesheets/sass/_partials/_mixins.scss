@@ -1,0 +1,14 @@
+@import "_partials/_vars";
+
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+     -moz-border-radius: $radius;
+      -ms-border-radius: $radius;
+          border-radius: $radius;
+}
+
+@mixin vertical-centred($percentage) {
+	position: relative;
+	top: $percentage;
+	transform: translateY(-$percentage);
+}

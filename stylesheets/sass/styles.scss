@@ -1,4 +1,8 @@
+@import "_partials/_mixins.scss";
 @import "_partials/_vars.scss";
+@import "_modules/_buttons.scss";
+@import "_modules/_placeholder.scss";
+// @import "_modules/_checkbox.scss";
 
 * {
 	box-sizing: border-box;
@@ -57,4 +61,16 @@ li {
 			color: $link-hover;
 		}
 	}
+}
+
+h1 {
+	font-size: $h1-size;
+}
+
+h2 {
+	font-size: $h2-size
+}
+
+h3 {
+	font-size: $h3-size;
 }

@@ -1,0 +1,15 @@
+input::-webkit-input-placeholder {
+color: $placeholder !important;
+}
+ 
+input:-moz-placeholder { /* Firefox 18- */
+color: $placeholder !important;  
+}
+ 
+input::-moz-placeholder {  /* Firefox 19+ */
+color: $placeholder !important;  
+}
+ 
+input:-ms-input-placeholder {  
+color: $placeholder !important;  
+}

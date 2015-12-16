@@ -4,6 +4,7 @@
 	<title>Sign Up - Daily UI</title>
 	<link rel="stylesheet" type="text/css" href="../stylesheets/css/reset.css">
 	<link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/pure-min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 	<link rel="stylesheet" type="text/css" href="../stylesheets/css/styles.css">
 	<link rel="stylesheet" type="text/css" href="../stylesheets/css/signup.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -15,31 +16,38 @@
 				<div class="form-container">
 					<h1>Florence</h1>
 					<h2>Your journey begins here...</h2>
-					<div class="pure-u-1-2 left">
+					<div class="pure-u-11-24 left">
 						<form>
-							<div class="pure-u-1-1">
+							<div class="pure-u-1-1 fields">
 								<label for="username">Username:</label>
-								<input type="text" value="e.g. Bob" name="username"/>
+								<input type="text" name="username"/>
 							</div>
-							<div class="pure-u-1-1">
+							<div class="pure-u-1-1 fields">
 								<label for="password">Password:</label>
-								<input type="password" value="password" name="password">
+								<input type="password" name="password" class="password">
+								<button class="unmask" type="button" title="Mask/Unmask password to check content"><i class="fa fa-eye" id="eye"></i></button>
 							</div>
-							<input type="checkbox" name="remember" value="remember">Remember Me
-							<input type="submit" name="signin" value="Sign In"/>
+							<div class="remember-me">
+								<input type="checkbox" name="remember" value="remember" class="checkbox">
+								<label for="remember" class="remember-label">Remember Me</label>
+							</div>
+							<input type="submit" name="signin" value="Sign In" class="btn signin" />
 						</form>
-					</div><div class="pure-u-1-2 right">
+					</div><div class="pure-u-1-2 position right">
 					<div>
-						<h3>Sign up with Twitter</h3>
-						<p>Don't fancy another password to another account? Why not sign in with Twitter?</p>
+						<h3>Sign In</h3>
+						<p>Don't fancy another password to another account? Sign up with an existing account.</p>
+						<a href="twitter.com" class="btn social-media twitter"><i class="fa fa-twitter"></i> Sign in with Twitter</a>
+						<a href="facebook.com" class="btn social-media facebook"><i class="fa fa-facebook"></i>	Sign in with Facebook</a>
 					</div>
-				</div>
-				<div class="pure-u-1-1">
-					<a href="#">Already a member?</a>
 				</div>
 			</div>
 			</div>
 		</div>
 	</div>
+
+	<!-- SCRIPTS -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script type="text/javascript" src="../javascript/password-unmask.js"></script>
 </body>
 </html>

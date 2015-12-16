@@ -1,32 +1,91 @@
 /* VARIABLES */
+/* VARIABLES */
+@import url(https://fonts.googleapis.com/css?family=Felipa|Source+Sans+Pro:400,300);
 body {
-  background: url("../../images/florence.jpg") no-repeat center center fixed;
+  background: url("../../images/florence_2.jpg") no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
-  background-size: cover; }
+  background-size: cover;
+  font-family: "Source Sans Pro", sans-serif;
+  color: #333; }
 
 .entry {
   height: 100vh; }
 
 h1, h2 {
-  color: #111;
   text-align: center; }
 
+h1 {
+  font-family: "Felipa", cursive;
+  font-size: 5em;
+  margin: 0; }
+
 h2 {
+  padding: 10px 0 35px;
+  font-size: 2em;
   font-style: italic;
-  padding: 10px 0; }
+  font-weight: 300; }
+
+h3 {
+  font-weight: bold;
+  margin-bottom: 10px; }
 
 .form-container {
   border-top: 1px solid #ddd;
   border-bottom: 1px solid #ddd;
-  background: rgba(255, 255, 255, 0.6);
+  background: rgba(255, 255, 255, 0.65);
   position: relative;
   top: 30%;
   transform: translateY(-30%);
   padding: 50px 30px; }
 
+form {
+  display: inline; }
+
 label {
-  color: #eee; }
+  display: block; }
+
+input[type="text"],
+input[type="password"] {
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  border-radius: 5px;
+  border: 1px solid #eee;
+  padding: 10px 45px 10px 5px;
+  width: 100%;
+  display: block;
+  margin: 10px 0 20px 0; }
+
+.unmask {
+  position: absolute;
+  right: 55%;
+  top: 64.5%;
+  color: #8E8E8E;
+  border: none;
+  background: none; }
+
+p {
+  font-weight: 300; }
+
+.fields {
+  display: inline-block;
+  padding: 0 5px; }
+
+.remember-me {
+  display: block;
+  float: right;
+  width: 33%;
+  margin-bottom: 20px; }
+  .remember-me .checkbox {
+    display: inline-block;
+    float: left; }
+  .remember-me .remember-label {
+    display: inline-block;
+    float: right;
+    position: relative;
+    top: 6%;
+    transform: translateY(-6%); }
 
 /*# sourceMappingURL=signup.css.map */

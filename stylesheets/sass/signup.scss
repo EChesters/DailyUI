@@ -1,11 +1,19 @@
 @import "_partials/_vars";
+@import "_partials/_mixins";
+
+@import url(https://fonts.googleapis.com/css?family=Felipa|Source+Sans+Pro:400,300);
+
+$title-font: 'Felipa', cursive;
+$body-font: 'Source Sans Pro', sans-serif;
 
 body {
-	background: url('../../images/florence.jpg')no-repeat center center fixed;
+	background: url('../../images/florence_2.jpg')no-repeat center center fixed;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
+	font-family: $body-font;
+	color: $black;
 }
 
 .entry {
@@ -13,27 +21,85 @@ body {
 }
 
 h1, h2{
-	color: $black;
 	text-align: center;
 }
 
+h1 {
+	font-family: $title-font;
+	font-size: 5em;
+	margin: 0;
+}
+
 h2 {
+	padding: 10px 0 35px;
+	font-size: 2em;
 	font-style: italic;
-	padding: 10px 0;
+	font-weight: 300;
+}
+
+h3 {
+	font-weight: bold;
+	margin-bottom: 10px;
 }
 
 .form-container {
 	border-top: 1px solid #ddd;
 	border-bottom: 1px solid #ddd;
-	background: rgba(255, 255, 255, 0.6);
-	position: relative;
-	top: 30%;
-	transform: translateY(-30%);
+	background: rgba(255, 255, 255, 0.65);
+	@include vertical-centred(30%);
 	padding: 50px 30px;
 }
 
-label {
-	color: #eee;
+form {
+	display: inline;
 }
 
-// Colour Palette: http://www.colourlovers.com/palette/1/metro
+label {
+	display: block;
+}
+
+input[type="text"],
+input[type="password"] {
+	@include border-radius(5px);
+	border: 1px solid $white;
+	padding: 10px 45px 10px 5px;
+	width: 100%;
+	display: block;
+	margin: 10px 0 20px 0;
+}
+
+.unmask {
+	position: absolute;
+	right: 55%;
+	top: 64.5%;
+	color: $placeholder;
+	border: none;
+	background: none;
+}
+
+p {
+	font-weight: 300;
+}
+
+.fields {
+	display: inline-block;
+	padding: 0 5px;
+}
+
+.remember-me {
+	display: block;
+	float: right;
+	width: 33%;
+	margin-bottom: 20px;
+
+	.checkbox {
+		display: inline-block;
+		float: left;
+	}
+
+	.remember-label {
+		display: inline-block;
+		float: right;
+		@include vertical-centred(6%);
+	}
+}

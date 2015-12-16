@@ -1,4 +1,58 @@
 /* VARIABLES */
+/* VARIABLES */
+.btn {
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  border-radius: 5px;
+  text-align: center;
+  font-size: 1.1em; }
+  .btn.social-media {
+    display: block;
+    width: 60%;
+    color: #eee;
+    text-decoration: none;
+    margin: 15px auto;
+    padding: 10px 20px; }
+    .btn.social-media.twitter {
+      background-color: #50abf1;
+      border: #4292CD 1px solid; }
+    .btn.social-media.facebook {
+      background-color: #3d5a9c;
+      border: #23345B 1px solid; }
+  .btn.signin {
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    border-radius: 5px;
+    background-color: transparent;
+    text-transform: uppercase;
+    border: 3px solid #eee;
+    width: 100%;
+    display: block;
+    color: #eee;
+    padding: 10px 20px;
+    font-weight: bold;
+    text-shadow: 0px 0px 24px rgba(0, 0, 0, 0.7); }
+    .btn.signin:hover {
+      text-decoration: underline;
+      background-color: #CB623B;
+      border-color: #92492D; }
+
+input::-webkit-input-placeholder {
+  color: #8E8E8E !important; }
+
+input:-moz-placeholder {
+  /* Firefox 18- */
+  color: #8E8E8E !important; }
+
+input::-moz-placeholder {
+  /* Firefox 19+ */
+  color: #8E8E8E !important; }
+
+input:-ms-input-placeholder {
+  color: #8E8E8E !important; }
+
 * {
   box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -38,5 +92,14 @@ li {
     color: #FF6B6B; }
     li a:hover {
       color: #4ECDC4; }
+
+h1 {
+  font-size: 2em; }
+
+h2 {
+  font-size: 1.8em; }
+
+h3 {
+  font-size: 1.6em; }
 
 /*# sourceMappingURL=styles.css.map */
