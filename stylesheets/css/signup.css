@@ -61,7 +61,7 @@ input[type="password"] {
 .unmask {
   position: absolute;
   right: 55%;
-  top: 64.5%;
+  top: 64%;
   color: #8E8E8E;
   border: none;
   background: none; }
@@ -76,7 +76,7 @@ p {
 .remember-me {
   display: block;
   float: right;
-  width: 33%;
+  width: 40%;
   margin-bottom: 20px; }
   .remember-me .checkbox {
     display: inline-block;
