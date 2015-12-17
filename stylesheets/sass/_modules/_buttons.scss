@@ -1,16 +1,16 @@
 .btn {
-	@include border-radius(5px);
+	padding: 10px 20px;
 	text-align: center;
 	font-size: 1.1em;
 
 
 	&.social-media {
+		@include border-radius(5px);
 		display: block;
 		width: 80%;
 		color: $white;
 		text-decoration: none;
 		margin: 15px auto;
-		padding: 10px 20px;
 
 		&.twitter {
 			background-color: $twitter-blue;
@@ -31,7 +31,6 @@
 		width: 100%;
 		display: block;
 		color: $white;
-		padding: 10px 20px;
 		font-weight: bold;
 		text-shadow: 0px 0px 24px rgba(0, 0, 0, 0.7);
 
@@ -40,5 +39,11 @@
 			background-color: #CB623B;
 			border-color: #92492D;
 		}
+	}
+
+	&.pay {
+		border: 2px solid $credit-gold;
+		color: $credit-gold;
+		background-color: rgba(255, 255, 255, 0.2);
 	}
 }

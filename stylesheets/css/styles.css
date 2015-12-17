@@ -1,19 +1,19 @@
 /* VARIABLES */
 /* VARIABLES */
 .btn {
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  -ms-border-radius: 5px;
-  border-radius: 5px;
+  padding: 10px 20px;
   text-align: center;
   font-size: 1.1em; }
   .btn.social-media {
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    border-radius: 5px;
     display: block;
     width: 80%;
     color: #eee;
     text-decoration: none;
-    margin: 15px auto;
-    padding: 10px 20px; }
+    margin: 15px auto; }
     .btn.social-media.twitter {
       background-color: #50abf1;
       border: #4292CD 1px solid; }
@@ -31,13 +31,16 @@
     width: 100%;
     display: block;
     color: #eee;
-    padding: 10px 20px;
     font-weight: bold;
     text-shadow: 0px 0px 24px rgba(0, 0, 0, 0.7); }
     .btn.signin:hover {
       text-decoration: underline;
       background-color: #CB623B;
       border-color: #92492D; }
+  .btn.pay {
+    border: 2px solid #e1d3b8;
+    color: #e1d3b8;
+    background-color: rgba(255, 255, 255, 0.2); }
 
 input::-webkit-input-placeholder {
   color: #8E8E8E !important; }
