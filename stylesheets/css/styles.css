@@ -40,7 +40,8 @@
   .btn.pay {
     border: 2px solid #e1d3b8;
     color: #e1d3b8;
-    background-color: rgba(255, 255, 255, 0.2); }
+    background-color: rgba(255, 255, 255, 0.2);
+    margin: 10px auto; }
 
 input::-webkit-input-placeholder {
   color: #8E8E8E !important; }

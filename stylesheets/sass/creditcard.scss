@@ -1,3 +1,17 @@
+@import "_partials/_vars";
+@import "_partials/_mixins";
+@import url(https://fonts.googleapis.com/css?family=Cardo);
+
+$credit-font: 'Cardo';
+
+
+
+body {
+	font-family: $credit-font;
+	color: $credit-gold;
+	font-size: 1.3em;
+}
+
 form {
 	display: inline;
 }
