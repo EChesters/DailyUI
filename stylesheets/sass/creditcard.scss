@@ -17,20 +17,22 @@ form {
 }
 
 label {
-	margin: 15px 0 5px;
+	margin: 20px 0 10px;
 	display: block;
 }
 
 input[type="text"] {
 	color: $grey;
-	width: 250px;
+	width: 100%;
 	display: block;
+	border: none;
+	padding: 5px 2px;
+	margin: 5px 0;
 
-}
-
-input[type="submit"] {
-	/*display: block;*/
-	margin: 10px;
+	#expiry, #cvv {
+		width: 40%;
+		display: inline-block;
+	}
 }
 
 select {
@@ -46,7 +48,7 @@ select {
 
 .entry {
 	border: 2px solid $credit-gold;
-	padding: 15px;
+	padding: 0 45px;
 	@include vertical-centred(-10%);
 	background-color: $body-bg;
 }

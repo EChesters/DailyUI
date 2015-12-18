@@ -11,17 +11,19 @@ form {
   display: inline; }
 
 label {
-  margin: 15px 0 5px;
+  margin: 20px 0 10px;
   display: block; }
 
 input[type="text"] {
   color: #7E7E7E;
-  width: 250px;
-  display: block; }
-
-input[type="submit"] {
-  /*display: block;*/
-  margin: 10px; }
+  width: 100%;
+  display: block;
+  border: none;
+  padding: 5px 2px;
+  margin: 5px 0; }
+  input[type="text"] #expiry, input[type="text"] #cvv {
+    width: 40%;
+    display: inline-block; }
 
 select {
   border: none;
@@ -33,7 +35,7 @@ select {
 
 .entry {
   border: 2px solid #e1d3b8;
-  padding: 15px;
+  padding: 0 45px;
   position: relative;
   top: -10%;
   transform: translateY(10%);
