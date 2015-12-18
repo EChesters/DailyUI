@@ -34,13 +34,12 @@
     font-weight: bold;
     text-shadow: 0px 0px 24px rgba(0, 0, 0, 0.7); }
     .btn.signin:hover {
-      background-color: rgba(255, 255, 255, 0.5);
+      background-color: rgba(255, 255, 255, 0.3);
       border-color: #eee;
       color: #FFFFFF;
       text-shadow: none; }
     .btn.signin:focus {
       background-color: rgba(255, 255, 255, 0.2);
-      /*outline: 0;*/
       outline-color: rgba(255, 255, 255, 0.05);
       outline-width: thin; }
   .btn.pay {
@@ -50,7 +49,6 @@
     margin: 10px auto; }
     .btn.pay:hover {
       background-color: #e1d3b8;
-      text-decoration: underline;
       color: #eee;
       border-color: #eee; }
 

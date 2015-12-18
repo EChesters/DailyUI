@@ -16,7 +16,7 @@ body {
     right: 0;
     bottom: 0;
     left: 0;
-    background-image: linear-gradient(to bottom right, #ab261d, #00a637);
+    background-image: linear-gradient(to bottom right, #A1231A, #00882C);
     opacity: .6; }
 
 .entry {
@@ -85,7 +85,7 @@ p {
 
 .remember-me {
   display: block;
-  width: 35%;
+  /*width: 35%;*/
   margin-bottom: 20px; }
   .remember-me .checkbox {
     display: inline-block; }

@@ -35,7 +35,7 @@
 		text-shadow: 0px 0px 24px rgba(0, 0, 0, 0.7);
 
 		&:hover {
-			background-color: rgba(255,255,255,0.5);
+			background-color: rgba(255,255,255,0.3);
 			border-color: $white;
 			color: $actual-white;
 			text-shadow: none;
@@ -43,7 +43,6 @@
 
 		&:focus {
 			background-color: rgba(255,255,255, 0.2);
-			/*outline: 0;*/
 			outline-color: rgba(255, 255, 255, 0.05);
 			outline-width: thin;
 		}
@@ -57,7 +56,6 @@
 
 		&:hover {
 			background-color: $credit-gold;
-			text-decoration: underline;
 			color: $white;
 			border-color: $white;
 		}
