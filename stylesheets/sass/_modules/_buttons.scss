@@ -3,7 +3,6 @@
 	text-align: center;
 	font-size: 1.1em;
 
-
 	&.social-media {
 		@include border-radius(5px);
 		display: block;
@@ -48,14 +47,17 @@
 	}
 
 	&.pay {
-		border: 2px solid $credit-gold;
-		color: $credit-gold;
-		background: transparent;
+		color: $body-bg;
+		background: $credit-gold;
 		margin: 20px auto;
 		width: 100%;
+		padding: 15px 20px;
+		border: 2px solid transparent;
 
 		&:hover {
-			@include colour-opacity($credit-gold, 0.2);
+			background-color: transparent;
+			border: 2px solid $credit-gold;
+			color: $credit-gold;
 		}
 
 		&:focus {
