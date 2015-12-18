@@ -44,18 +44,18 @@
     margin: 10px auto; }
 
 input::-webkit-input-placeholder {
-  color: #8E8E8E !important; }
+  color: #7E7E7E !important; }
 
 input:-moz-placeholder {
   /* Firefox 18- */
-  color: #8E8E8E !important; }
+  color: #7E7E7E !important; }
 
 input::-moz-placeholder {
   /* Firefox 19+ */
-  color: #8E8E8E !important; }
+  color: #7E7E7E !important; }
 
 input:-ms-input-placeholder {
-  color: #8E8E8E !important; }
+  color: #7E7E7E !important; }
 
 * {
   box-sizing: border-box;

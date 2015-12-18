@@ -13,16 +13,27 @@ body {
 	-o-background-size: cover;
 	background-size: cover;
 	font-family: $body-font;
-	color: $black;
+	color: $white;
+
+	&:before {
+    	content: '';
+		position: absolute;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		background-image: linear-gradient(to bottom right,#ab261d,#00a637);
+		opacity: .6; 
+  }
 }
 
 .entry {
 	height: 100vh;
 }
-
+/*
 h1, h2{
 	text-align: center;
-}
+}*/
 
 h1 {
 	font-family: $title-font;
@@ -43,11 +54,11 @@ h3 {
 }
 
 .form-container {
-	border-top: 1px solid #ddd;
-	border-bottom: 1px solid #ddd;
-	background: rgba(255, 255, 255, 0.65);
-	@include vertical-centred(30%);
+/*	border-top: 1px solid #ddd;
+	border-bottom: 1px solid #ddd;*/
+	@include vertical-centred(40%);
 	padding: 50px 30px;
+	margin-left: 33%;
 }
 
 form {
@@ -66,12 +77,13 @@ input[type="password"] {
 	width: 100%;
 	display: block;
 	margin: 10px 0 20px 0;
+	color: $placeholder;
 }
 
 .unmask {
 	position: absolute;
-	right: 55%;
-	top: 64%;
+	right: 26%;
+	top: 64.3%;
 	color: $placeholder;
 	border: none;
 	background: none;
@@ -89,7 +101,7 @@ p {
 .remember-me {
 	display: block;
 	float: right;
-	width: 40%;
+	width: 35%;
 	margin-bottom: 20px;
 
 	.checkbox {
