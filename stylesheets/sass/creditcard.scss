@@ -5,17 +5,56 @@
 $credit-font: 'Cardo';
 
 
-
 body {
 	font-family: $credit-font;
 	color: $credit-gold;
 	font-size: 1.3em;
+	background-color: $actual-white;
 }
 
 form {
 	display: inline;
 }
 
-label, input[type="submit"] {
+label {
+	margin: 15px 0 5px;
 	display: block;
+}
+
+input[type="text"] {
+	color: $grey;
+	width: 250px;
+	display: block;
+
+}
+
+input[type="submit"] {
+	/*display: block;*/
+	margin: 10px;
+}
+
+select {
+	border: none;
+	color: $grey;
+	cursor: pointer;
+	width: 75px;
+	
+	&:focus {
+		outline: none;
+	}
+}
+
+.entry {
+	border: 2px solid $credit-gold;
+	padding: 15px;
+	@include vertical-centred(-10%);
+	background-color: $body-bg;
+}
+
+/**/
+::-webkit-input-placeholder,
+:-moz-placeholder,
+::-moz-placeholder,
+:-ms-input-placeholder {
+   color: $placeholder;
 }

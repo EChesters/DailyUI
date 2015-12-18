@@ -4,12 +4,46 @@
 body {
   font-family: "Cardo";
   color: #e1d3b8;
-  font-size: 1.3em; }
+  font-size: 1.3em;
+  background-color: #FFFFFF; }
 
 form {
   display: inline; }
 
-label, input[type="submit"] {
+label {
+  margin: 15px 0 5px;
   display: block; }
+
+input[type="text"] {
+  color: #7E7E7E;
+  width: 250px;
+  display: block; }
+
+input[type="submit"] {
+  /*display: block;*/
+  margin: 10px; }
+
+select {
+  border: none;
+  color: #7E7E7E;
+  cursor: pointer;
+  width: 75px; }
+  select:focus {
+    outline: none; }
+
+.entry {
+  border: 2px solid #e1d3b8;
+  padding: 15px;
+  position: relative;
+  top: -10%;
+  transform: translateY(10%);
+  background-color: #556270; }
+
+/**/
+::-webkit-input-placeholder,
+:-moz-placeholder,
+::-moz-placeholder,
+:-ms-input-placeholder {
+  color: #9C9C9C; }
 
 /*# sourceMappingURL=creditcard.css.map */
