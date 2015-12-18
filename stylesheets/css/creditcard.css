@@ -5,7 +5,20 @@ body {
   font-family: "Cardo";
   color: #ffd3b8;
   font-size: 1.3em;
-  background-color: #FFFFFF; }
+  background: url("../../images/desk.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; }
+  body:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: linear-gradient(to bottom right, #556270, #6F7F92);
+    opacity: .6; }
 
 form {
   display: inline; }
@@ -24,6 +37,9 @@ input[type="text"] {
   input[type="text"] #expiry, input[type="text"] #cvv {
     width: 40%;
     display: inline-block; }
+  input[type="text"]:focus {
+    outline-color: rgba(255, 211, 184, 0.05);
+    outline-width: thin; }
 
 select {
   border: none;
@@ -37,8 +53,8 @@ select {
   border: 2px solid #ffd3b8;
   padding: 0 45px;
   position: relative;
-  top: -10%;
-  transform: translateY(10%);
+  top: -50%;
+  transform: translateY(50%);
   background-color: #556270; }
 
 /**/

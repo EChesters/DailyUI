@@ -30,10 +30,6 @@ body {
 .entry {
 	height: 100vh;
 }
-/*
-h1, h2{
-	text-align: center;
-}*/
 
 h1 {
 	font-family: $title-font;
@@ -54,8 +50,6 @@ h3 {
 }
 
 .form-container {
-/*	border-top: 1px solid #ddd;
-	border-bottom: 1px solid #ddd;*/
 	@include vertical-centred(40%);
 	padding: 50px 30px;
 	margin-left: 33%;

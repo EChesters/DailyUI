@@ -9,7 +9,22 @@ body {
 	font-family: $credit-font;
 	color: $credit-gold;
 	font-size: 1.3em;
-	background-color: $actual-white;
+	background: url('../../images/desk.jpg')no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+
+	&:before {
+    	content: '';
+		position: absolute;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		background-image: linear-gradient(to bottom right,#556270,#6F7F92);
+		opacity: .6; 
+  }
 }
 
 form {
@@ -33,6 +48,11 @@ input[type="text"] {
 		width: 40%;
 		display: inline-block;
 	}
+
+	&:focus {
+		outline-color: rgba(255, 211, 184, 0.05);
+		outline-width: thin;
+	}
 }
 
 select {
@@ -49,7 +69,7 @@ select {
 .entry {
 	border: 2px solid $credit-gold;
 	padding: 0 45px;
-	@include vertical-centred(-10%);
+	@include vertical-centred(-50%);
 	background-color: $body-bg;
 }
 
