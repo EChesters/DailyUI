@@ -37,27 +37,37 @@
       text-decoration: underline;
       background-color: #eee;
       border-color: #eee;
-      color: #7E7E7E;
+      color: #9C9C9C;
       text-shadow: none; }
+    .btn.signin:focus {
+      background-color: rgba(255, 255, 255, 0.2);
+      /*outline: 0;*/
+      outline-color: rgba(255, 255, 255, 0.05);
+      outline-width: thin; }
   .btn.pay {
     border: 2px solid #e1d3b8;
     color: #e1d3b8;
     background-color: rgba(255, 255, 255, 0.2);
     margin: 10px auto; }
+    .btn.pay:hover {
+      background-color: #e1d3b8;
+      text-decoration: underline;
+      color: #eee;
+      border-color: #eee; }
 
 input::-webkit-input-placeholder {
-  color: #7E7E7E !important; }
+  color: #9C9C9C !important; }
 
 input:-moz-placeholder {
   /* Firefox 18- */
-  color: #7E7E7E !important; }
+  color: #9C9C9C !important; }
 
 input::-moz-placeholder {
   /* Firefox 19+ */
-  color: #7E7E7E !important; }
+  color: #9C9C9C !important; }
 
 input:-ms-input-placeholder {
-  color: #7E7E7E !important; }
+  color: #9C9C9C !important; }
 
 * {
   box-sizing: border-box;

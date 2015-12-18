@@ -40,7 +40,13 @@
 			border-color: $white;
 			color: $placeholder;
 			text-shadow: none;
+		}
 
+		&:focus {
+			background-color: rgba(255,255,255, 0.2);
+			/*outline: 0;*/
+			outline-color: rgba(255, 255, 255, 0.05);
+			outline-width: thin;
 		}
 	}
 
@@ -49,5 +55,12 @@
 		color: $credit-gold;
 		background-color: rgba(255, 255, 255, 0.2);
 		margin: 10px auto;
+
+		&:hover {
+			background-color: $credit-gold;
+			text-decoration: underline;
+			color: $white;
+			border-color: $white;
+		}
 	}
 }

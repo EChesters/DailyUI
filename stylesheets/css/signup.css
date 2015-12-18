@@ -67,13 +67,13 @@ input[type="password"] {
   width: 100%;
   display: block;
   margin: 10px 0 20px 0;
-  color: #7E7E7E; }
+  color: #9C9C9C; }
 
 .unmask {
   position: absolute;
   right: 26%;
   top: 64.3%;
-  color: #7E7E7E;
+  color: #9C9C9C;
   border: none;
   background: none; }
 
