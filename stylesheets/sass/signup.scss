@@ -95,23 +95,19 @@ p {
 
 .fields {
 	display: inline-block;
-	padding: 0 5px;
 }
 
 .remember-me {
 	display: block;
-	float: right;
 	width: 35%;
 	margin-bottom: 20px;
 
 	.checkbox {
 		display: inline-block;
-		float: left;
 	}
 
 	.remember-label {
 		display: inline-block;
-		float: right;
-		@include vertical-centred(6%);
+		@include vertical-centred(-6%);
 	}
 }

@@ -81,22 +81,18 @@ p {
   font-weight: 300; }
 
 .fields {
-  display: inline-block;
-  padding: 0 5px; }
+  display: inline-block; }
 
 .remember-me {
   display: block;
-  float: right;
   width: 35%;
   margin-bottom: 20px; }
   .remember-me .checkbox {
-    display: inline-block;
-    float: left; }
+    display: inline-block; }
   .remember-me .remember-label {
     display: inline-block;
-    float: right;
     position: relative;
-    top: 6%;
-    transform: translateY(-6%); }
+    top: -6%;
+    transform: translateY(6%); }
 
 /*# sourceMappingURL=signup.css.map */
