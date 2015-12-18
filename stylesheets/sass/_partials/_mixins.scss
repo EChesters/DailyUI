@@ -12,3 +12,7 @@
 	top: $percentage;
 	transform: translateY(-$percentage);
 }
+
+@mixin colour-opacity($colour, $opacity) {
+	background: rgba($colour, $opacity);
+}

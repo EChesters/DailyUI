@@ -55,7 +55,9 @@
 		width: 100%;
 
 		&:hover {
-			background-color: $credit-gold;
+			/*background-color: $credit-gold;*/
+			@include colour-opacity($credit-gold, 0.3);
+			opacity: 0.2;
 			color: $white;
 			border-color: $white;
 		}
