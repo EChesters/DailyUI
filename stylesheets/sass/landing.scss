@@ -1,40 +1,112 @@
 @import "_partials/_vars";
 @import "_partials/_mixins";
 
-$monarch-blue: #120f3a;
+@import url(https://fonts.googleapis.com/css?family=Roboto|VT323);
+$body-font: 'Roboto', sans-serif;
+$title-font: 'VT323', ;
 
-body {
-	background: url('../../images/portugal_1.jpg')no-repeat center center fixed;
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	background-size: cover;
-
-	color: $white;
-	text-shadow: 0px 0px 24px rgba(18, 15, 58, 0.7);
+@keyframes move-twink-back {
+	from 	{ background-position: 0 0; }
+	to 		{ background-position: -10000px 5000px; }
 }
 
-h1 {
-	font-size: 5em;
+@-webkit-keyframes move-twink-back {
+	from 	{ background-position: 0 0; }
+	to 		{ background-position: -10000px 5000px; }
 }
 
-h2 {
-	font-size: 2.5em;
+@-moz-keyframes move-twink-back {
+	from 	{ background-position: 0 0; }
+	to 		{ background-position: -10000px 5000px; }
 }
 
-p {
-	font-style: italic;
-	font-size: 1.5em;
-	padding-top: 50px;
-	text-align: center;
+@-ms-keyframes move-twink-back {
+	from 	{ background-position: 0 0; }
+	to 		{ background-position: -10000px 5000px; }
+}
+
+.stars, .twinkling {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	width: 100%;
+	height: 100%;
+	display: block;
+}
+
+.stars {
+	background: $actual-black url('../../images/stars.png') repeat top center;
+	z-index: 0;
+}
+
+.twinkling {
+	background: transparent url('../../images/twinkling.png') repeat top center;
+	z-index: 1;
+
+	-moz-animation:move-twink-back 200s linear infinite;
+	-ms-animation:move-twink-back 200s linear infinite;
+	-o-animation:move-twink-back 200s linear infinite;
+	-webkit-animation:move-twink-back 200s linear infinite;
+	animation: move-twink-back 200s linear infinite;
 }
 
 .entry {
-	width: 50%;			// REMOVE
-	height: 100vh;
+	color: $white;
+	position: relative;
+	z-index: 5;
+	margin: 0 auto;
+	display: block;
+	@include vertical-centred(-30%);
 }
 
-.text-container {
-	@include vertical-centred(30%);
+h1 {
+	text-align: center;
+	color: $rocket-red;
+	font-family: $title-font;
+	font-size: 5em;
+}
+
+h2, p {
+	text-align: center;
+	font-family: $body-font;
+	margin: 15px 0;
+}
+
+form {
+	padding: 35px 0;
+	text-align: center;	
+}
+
+button {
+	font-family: $body-font;
+	background: transparent;
+	border: 1px solid $actual-white;
+	display: block;
+	margin: 20px auto;
+
+	&:hover {
+		background-color: rgba(255,255,255,0.3);
+		border-color: $white;
+		color: $actual-white;
+		text-shadow: none;
+	}
+
+	&:focus {
+		background-color: rgba(255,255,255, 0.2);
+		outline-color: rgba(255, 255, 255, 0.05);
+		outline-width: thin;
+	}
+}
+
+input[type="text"] {
+	color: $actual-black;
+	border: none;
+	border-bottom: 2px solid $actual-white;
+	background: transparent;
+	padding: 5px 2px;
+	width: 250px;
+	margin: 0 10px;
 	display: inline-block;
 }

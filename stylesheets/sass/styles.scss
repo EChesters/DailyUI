@@ -4,10 +4,19 @@
 @import "_modules/_placeholder.scss";
 // @import "_modules/_checkbox.scss";
 
-* {
+*, body {
 	box-sizing: border-box;
 	-moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
+}
+
+body {
+	background-color: $white;
+}
+
+/* CURSORS ----------- */
+.pointer {
+	cursor: pointer;
 }
 
 /* LAYOUT --------- */
@@ -48,14 +57,32 @@
 	}
 }
 
+/* LIST FOR ENTRIES */
+.entry-list {
+	display: block;
+
+	.ui-entry {
+		display: inline-block;
+		width: 25%;
+		border: 1px solid $grey;
+		height: 150px;
+		margin: 5px;
+		text-align: center;
+		background-color: $actual-white;
+
+		@extend .pointer;
+	}
+}
+
 /* TEXT ---------- */
 li {
-	letter-spacing: 5px;
 	font-size: 2em;
 	color: $link-color;
 
 	a {
 		color: $link-color;
+		text-decoration: none;
+		@include vertical-centred(35%);
 
 		&:hover {
 			color: $link-hover;
@@ -73,9 +100,4 @@ h2 {
 
 h3 {
 	font-size: $h3-size;
-}
-
-/* CURSORS ----------- */
-.pointer {
-	cursor: pointer;
 }

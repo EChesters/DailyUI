@@ -71,10 +71,17 @@ input::-moz-placeholder {
 input:-ms-input-placeholder {
   color: #9C9C9C !important; }
 
-* {
+*, body {
   box-sizing: border-box;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box; }
+
+body {
+  background-color: #eee; }
+
+/* CURSORS ----------- */
+.pointer, .entry-list .ui-entry {
+  cursor: pointer; }
 
 /* LAYOUT --------- */
 .position {
@@ -102,13 +109,28 @@ input:-ms-input-placeholder {
     font-size: 2.3em;
     font-style: italic; }
 
+/* LIST FOR ENTRIES */
+.entry-list {
+  display: block; }
+  .entry-list .ui-entry {
+    display: inline-block;
+    width: 25%;
+    border: 1px solid #7E7E7E;
+    height: 150px;
+    margin: 5px;
+    text-align: center;
+    background-color: #FFFFFF; }
+
 /* TEXT ---------- */
 li {
-  letter-spacing: 5px;
   font-size: 2em;
   color: #FF6B6B; }
   li a {
-    color: #FF6B6B; }
+    color: #FF6B6B;
+    text-decoration: none;
+    position: relative;
+    top: 35%;
+    transform: translateY(-35%); }
     li a:hover {
       color: #4ECDC4; }
 
@@ -120,9 +142,5 @@ h2 {
 
 h3 {
   font-size: 1.6em; }
-
-/* CURSORS ----------- */
-.pointer {
-  cursor: pointer; }
 
 /*# sourceMappingURL=styles.css.map */
