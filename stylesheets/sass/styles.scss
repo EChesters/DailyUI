@@ -10,10 +10,6 @@
     -webkit-box-sizing: border-box;
 }
 
-body {
-	background-color: $body-bg;
-}
-
 /* LAYOUT --------- */
 .position {
 	display: block;
@@ -35,6 +31,10 @@ body {
 
 .banner {
 	text-align: center;
+	border: 1px dashed $white;
+	padding: 5px;
+	margin: 10px;
+	background-color: $body-bg;
 
 	h1 {
 		color: $h1-color;

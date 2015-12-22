@@ -76,9 +76,6 @@ input:-ms-input-placeholder {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box; }
 
-body {
-  background-color: #556270; }
-
 /* LAYOUT --------- */
 .position {
   display: block; }
@@ -92,7 +89,11 @@ body {
     float: right; }
 
 .banner {
-  text-align: center; }
+  text-align: center;
+  border: 1px dashed #eee;
+  padding: 5px;
+  margin: 10px;
+  background-color: #556270; }
   .banner h1 {
     color: #C7F464;
     font-size: 3em; }
