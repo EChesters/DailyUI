@@ -58,7 +58,7 @@ $title-font: 'VT323', ;
 	z-index: 5;
 	margin: 0 auto;
 	display: block;
-	@include vertical-centred(-30%);
+	@include vertical-centred(-10%);
 }
 
 h1 {
@@ -124,7 +124,7 @@ $curve1: cubic-bezier(0.455, 0.03, 0.615, 0.555);
 $curve2: cubic-bezier(0.645, 0.045, 0.355, 1);
 
 .space {
-  @include vertical-centred(-200%);
+  @include vertical-centred(-170%);
   position: absolute;
   top: 0;
   left: 0;
