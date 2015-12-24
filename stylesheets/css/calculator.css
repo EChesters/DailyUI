@@ -17,7 +17,8 @@ body {
     font-family: "Poiret One", cursive;
     bottom: 75%;
     position: absolute;
-    color: #B64700; }
+    color: #B64700;
+    right: 0; }
     .calculator .equation.total {
       font-size: 4em;
       bottom: 55%;
