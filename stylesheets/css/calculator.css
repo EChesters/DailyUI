@@ -1,9 +1,9 @@
-@import url(https://fonts.googleapis.com/css?family=Poiret+One);
+@import url(https://fonts.googleapis.com/css?family=Inconsolata);
 /* VARIABLES */
 /* VARIABLES */
 body {
   background-color: #293e43;
-  font-family: "Poiret One", cursive; }
+  font-family: "Inconsolata"; }
 
 .calculator {
   z-index: 5000;
@@ -14,7 +14,7 @@ body {
     padding: 20px 0;
     font-size: 2.5em;
     text-align: right;
-    font-family: "Poiret One", cursive;
+    font-family: "Inconsolata";
     bottom: 75%;
     position: absolute;
     color: #B64700;
@@ -32,7 +32,7 @@ body {
     padding: 25px;
     font-size: 1.5em;
     cursor: pointer !important;
-    font-family: "Poiret One", cursive;
+    font-family: "Inconsolata";
     background-color: #344E55;
     border: 2px solid #293e43; }
     .calculator .number.symbol {
