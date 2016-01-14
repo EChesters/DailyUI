@@ -10,10 +10,6 @@
     -webkit-box-sizing: border-box;
 }
 
-body {
-	background-color: $white;
-}
-
 /* CURSORS ----------- */
 .pointer {
 	cursor: pointer;
@@ -40,14 +36,16 @@ body {
 
 .banner {
 	text-align: center;
-	border: 1px dashed $white;
 	padding: 5px;
-	margin: 10px;
-	background-color: $body-bg;
+	border-bottom: 3px solid #cdb88d;
+	background-color: $actual-white;
+	height: 200px;
+	font-family: $banner-font;
 
 	h1 {
-		color: $h1-color;
-		font-size: 3em;
+		font-size: 7em;
+		text-transform: uppercase;
+		@include vertical-centred(30%);
 	}
 
 	h2 {
@@ -60,27 +58,25 @@ body {
 /* LIST FOR ENTRIES */
 .entry-list {
 	display: block;
+	margin: 50px auto;
 
 	.ui-entry {
-		display: inline-block;
 		width: 250px;
-		border: 1px solid $grey;
-		height: 150px;
 		margin: 5px;
-		text-align: center;
-		background-color: $actual-white;
-
 		@extend .pointer;
 	}
+}
+
+.list-container {
+	height: auto;
+	display: flex;
 }
 
 /* TEXT ---------- */
 li {
 	font-size: 2em;
-	color: $link-color;
 
 	a {
-		color: $link-color;
 		text-decoration: none;
 		@include vertical-centred(35%);
 

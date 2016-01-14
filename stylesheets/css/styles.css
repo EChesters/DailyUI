@@ -1,4 +1,6 @@
+@import url(https://fonts.googleapis.com/css?family=Playfair+Display);
 /* VARIABLES */
+@import url(https://fonts.googleapis.com/css?family=Playfair+Display);
 /* VARIABLES */
 .btn {
   padding: 10px 20px;
@@ -76,9 +78,6 @@ input:-ms-input-placeholder {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box; }
 
-body {
-  background-color: #eee; }
-
 /* CURSORS ----------- */
 .pointer, .entry-list .ui-entry {
   cursor: pointer; }
@@ -97,13 +96,17 @@ body {
 
 .banner {
   text-align: center;
-  border: 1px dashed #eee;
   padding: 5px;
-  margin: 10px;
-  background-color: #556270; }
+  border-bottom: 3px solid #cdb88d;
+  background-color: #FFFFFF;
+  height: 200px;
+  font-family: "Playfair Display", serif; }
   .banner h1 {
-    color: #C7F464;
-    font-size: 3em; }
+    font-size: 7em;
+    text-transform: uppercase;
+    position: relative;
+    top: 30%;
+    transform: translateY(-30%); }
   .banner h2 {
     color: #eee;
     font-size: 2.3em;
@@ -111,22 +114,20 @@ body {
 
 /* LIST FOR ENTRIES */
 .entry-list {
-  display: block; }
+  display: block;
+  margin: 50px auto; }
   .entry-list .ui-entry {
-    display: inline-block;
     width: 250px;
-    border: 1px solid #7E7E7E;
-    height: 150px;
-    margin: 5px;
-    text-align: center;
-    background-color: #FFFFFF; }
+    margin: 5px; }
+
+.list-container {
+  height: auto;
+  display: flex; }
 
 /* TEXT ---------- */
 li {
-  font-size: 2em;
-  color: #FF6B6B; }
+  font-size: 2em; }
   li a {
-    color: #FF6B6B;
     text-decoration: none;
     position: relative;
     top: 35%;
