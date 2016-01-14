@@ -25,15 +25,17 @@ form {
 
 label {
   margin: 20px 0 10px;
-  display: block; }
+  display: block;
+  font-size: 1.3em; }
 
 input[type="text"] {
   color: #7E7E7E;
   width: 100%;
   display: block;
   border: none;
-  padding: 5px 2px;
-  margin: 5px 0; }
+  padding: 15px 5px;
+  margin: 5px 0;
+  font-size: 1.2em; }
   input[type="text"] #expiry, input[type="text"] #cvv {
     width: 40%;
     display: inline-block; }
@@ -51,11 +53,18 @@ select {
 
 .entry {
   border: 2px solid #ffd3b8;
+  background-color: #556270;
   padding: 0 45px;
+  float: none;
   position: relative;
-  top: -50%;
-  transform: translateY(50%);
-  background-color: #556270; }
+  top: -15%;
+  transform: translateY(15%); }
+  @media only screen and (max-width: 500px) {
+    .entry {
+      position: relative;
+      top: -10%;
+      transform: translateY(10%);
+      padding: 0 10px; } }
 
 /**/
 ::-webkit-input-placeholder,

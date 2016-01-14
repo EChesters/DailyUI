@@ -4,7 +4,6 @@
 
 $credit-font: 'Cardo';
 
-
 body {
 	font-family: $credit-font;
 	color: $credit-gold;
@@ -34,6 +33,7 @@ form {
 label {
 	margin: 20px 0 10px;
 	display: block;
+	font-size: 1.3em;
 }
 
 input[type="text"] {
@@ -41,8 +41,9 @@ input[type="text"] {
 	width: 100%;
 	display: block;
 	border: none;
-	padding: 5px 2px;
+	padding: 15px 5px;
 	margin: 5px 0;
+	font-size: 1.2em;
 
 	#expiry, #cvv {
 		width: 40%;
@@ -68,9 +69,15 @@ select {
 
 .entry {
 	border: 2px solid $credit-gold;
-	padding: 0 45px;
-	@include vertical-centred(-50%);
 	background-color: $body-bg;
+	padding: 0 45px;
+	float: none;
+	@include vertical-centred(-15%);
+
+	@media only screen and (max-width: 500px) {
+		@include vertical-centred(-10%);
+		padding: 0 10px;
+	}
 }
 
 /**/
