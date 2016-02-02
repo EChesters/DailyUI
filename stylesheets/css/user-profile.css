@@ -1,0 +1,17 @@
+@import url(https://fonts.googleapis.com/css?family=Playfair+Display);
+/* VARIABLES */
+body {
+  background-image: url("http://www.aboutbritain.com/images/towns/big/bristol-clifton-suspension-129753212.jpg");
+  background-size: cover;
+  color: #fff; }
+
+.avatar {
+  border: 5px solid #fff;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  -ms-border-radius: 100%;
+  border-radius: 100%;
+  height: 200px;
+  width: 200px; }
+
+/*# sourceMappingURL=user-profile.css.map */
